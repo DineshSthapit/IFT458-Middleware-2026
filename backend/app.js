@@ -10,6 +10,7 @@ const morgan = require('morgan'); // HTTP request logger for development
 const bodyParser = require('body-parser'); // parses incoming request bodies
 const cookieParser = require('cookie-parser'); // parses cookies from requests
 const cors = require('cors'); // allows React Native to connect to this server
+const logger = require('cors'); // import custom logger middleware
 
 // start express app
 const app = express();
@@ -19,6 +20,9 @@ const app = express();
 // Enable CORS so React Native app can make requests to this server
 // Without CORS the mobile app would get blocked by the browser security
 app.use(cors());
+
+//logger middleware
+app.use(logger);
 
 // Log the request to the console in development mode
 if (process.env.NODE_ENV === 'development') {
