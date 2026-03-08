@@ -15,10 +15,14 @@ const cookieParser = require('cookie-parser'); // parses cookies from requests
 const cors = require('cors'); // allows React Native to connect to this server
 const logger = require('cors'); // import custom logger middleware
 
+//EntryPoint for class requirement
+app.use(loggerMiddleware);
+
 // start express app
 const app = express();
 
 // 1) GLOBAL MIDDLEWARES
+
 
 // Enable CORS so React Native app can make requests to this server
 // Without CORS the mobile app would get blocked by the browser security
@@ -53,6 +57,7 @@ app.use(`${process.env.API_VERSION}/users`, userRouter);
 // 3) ROUTES API for Books
 // Book routes handle CRUD operations for books
 const booksRoutes = require('./routes/bookRoutes.js');
+const loggerMiddleware = require('./custom-middlewares/loggerMiddleware.js');
 app.use(`${process.env.API_VERSION}/books`, booksRoutes);
 
 // 4) Landing page - shows setup instructions when you visit the server in a browser
