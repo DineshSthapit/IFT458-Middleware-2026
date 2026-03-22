@@ -26,7 +26,7 @@ const app = require('./app');
 // with the actual password from the environment variable
 const DB = process.env.DATABASE.replace(
   '<db_password>',
-  process.env.DB_PASSWORD
+  process.env.DATABASE_PASSWORD
 );
 
 // Connect to MongoDB using mongoose
