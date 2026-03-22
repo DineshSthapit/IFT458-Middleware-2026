@@ -63,3 +63,21 @@ Date: 3/19/2026
 ## Notes
 For Module 5: Cloning Repository, the mobile and backend folder or opened in separate VS Code instances. The
 backend is started with node server.js and the mobile app runs without Android Studio with npx expo start. The mobile app was tested in the web browser using Developer Tools, and in the Device Toolbar there is a  Device Emulator icon to select a mobile profile. This project introduced me to git commands and React mobile application development with Express.js
+
+################################
+# MobileStudent - Jared Alwyn
+
+Date: 03/22/2026
+
+## What I Learned
+- The mobile application uses React Native with Expo.
+- The app is started using `npx expo start`.
+- The web version of the app runs on port 8081.
+- The mobile app connects to the backend API running on port 4000.
+
+## Notes
+For this activity, I opened the mobile folder in a separate VS Code window and installed dependencies using `npm install`. I then started the mobile application using `npx expo start`.
+
+After running the command, Expo generated a development server and provided a web version of the app at `http://localhost:8081`. I opened this in the browser to verify the mobile application was working correctly.
+
+I also ensured that the backend server was running at the same time on port 4000 so that the mobile app could connect to it successfully. This activity helped me understand how the frontend mobile app communicates with the backend API.

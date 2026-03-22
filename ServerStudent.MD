@@ -92,16 +92,27 @@ Once the server was running, I opened `http://localhost:4000` in my browser to v
 ################################
 # ServerStudent - Jared Alwyn
 
+## What I Learned
+- The backend uses Express.js with MongoDB.
+- The API runs on port 4000.
+- CORS is required so the mobile app can connect to the backend.
+
+## Notes
+For this activity, I set up the backend for the Book Exchange Platform and ran it locally with `node server.js`. I worked through setup issues with missing packages, middleware placement, duplicate files, and MongoDB authentication until the backend connected successfully. I verified the backend by opening `http://localhost:4000` in the browser.
+
 ## Git Workflow
 
 ### git status
-<PASTE TERMINAL OUTPUT>
-
-### git add
-<PASTE TERMINAL OUTPUT>
-
-### git commit
-<PASTE TERMINAL OUTPUT>
-
-### git push
-<PASTE TERMINAL OUTPUT>
+```text
+On branch middleware-implementation
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ServerStudent.MD
+        modified:   backend/app.js
+        modified:   backend/custom-middlewares/loggerMiddleware.js
+        modified:   backend/custom-middlewares/loggermiddleware.js
+        deleted:    backend/loggerMiddleware.js
+        modified:   backend/package-lock.json
+        modified:   backend/server.js
+        modified:   mobile/package-lock.json
