@@ -1,8 +1,9 @@
-// loggerMiddleware.js
-//hello, its me, I was wondering if after all these years you'd like to meet
-function loggerMiddleware(req, res, next) {
-    console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
+const loggerMiddleware = (req, res, next) => {
+    const timestamp = new Date().toISOString();
+
+    console.log(`[${timestamp}] ${req.method} request to ${req.url}`);
+    
     next();
-}
+};
 
 module.exports = loggerMiddleware;
