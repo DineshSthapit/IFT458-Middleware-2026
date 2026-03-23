@@ -12,4 +12,16 @@
 - Tested app interaction
 - Verified connection with backend
 
+<<<<<<< HEAD
 created notes for student in mobile student
+=======
+## Mobile Student Notes - Hamed Solaiman
+- Initialized the mobile/ subdirectory within a separate instance of VSCode.
+- Used --legacy-peer-deps  to resolved npm installation conflicts to force the installation of Expo.
+- Successfully launched Expo.
+
+## Testing and Evaluation - Hamed Solaiman
+- Opened the mobile web application from terminal by presing w.
+- Used a mobile emuilation of the Samsung Galaxy S20 to view the mobile website.
+- Confirmed communication between mobile frontend with the backend.
+>>>>>>> 7e9f2be0dc8344139d218e57e03f468948593bbc
