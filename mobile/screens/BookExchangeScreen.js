@@ -145,7 +145,7 @@ const BookExchangeScreen = ({ user, navigation }) => {
                 )}
 
                 {/* Back to home */}
-                <TouchableOpacity onPress={() => navigation('home')}>
+                <TouchableOpacity onPress={() => navigation.navigate('Home')}>
                     <Text style={[styles.link, { textAlign: 'center', marginTop: 15 }]}>
                         Back to Home
                     </Text>
